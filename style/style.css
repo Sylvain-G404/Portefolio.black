@@ -1,0 +1,757 @@
+@font-face {
+    font-family: "Calligraffitti";
+    src: url(../assets/police/Calligraffitti/Calligraffitti-Regular.ttf);
+}
+
+
+html,
+body {
+    margin: auto;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(0, 2, 66, 0.6);
+    background-image: url("../assets/images/cielnuitfond.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+
+    color: rgb(230, 230, 50);
+}
+
+/* *$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*   NAVBAR HEADER   *$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$* */
+
+.navBar {
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgba(0, 2, 66, 0.6);
+
+    width: 100%;
+
+    border-bottom: rgb(0, 0, 0, 0.6) 1px solid;
+}
+
+.titre {
+    z-index: 1;
+
+    position: relative;
+
+    text-align: center;
+
+    height: 24px;
+
+    margin-top: 10px;
+    margin-bottom: -20px;
+
+    left: -100px;
+}
+
+.sls {
+    z-index: auto;
+
+    position: absolute;
+
+    width: 200px;
+
+    animation: slsAction linear normal 10s infinite;
+    transition: 10ms;
+}
+
+@keyframes slsAction {
+    0% {
+        color: rgb(230, 230, 50);
+    }
+
+    40% {
+        color: rgb(230, 230, 50);
+    }
+
+    50% {
+        color: rgb(230, 230, 50, 0);
+    }
+
+    70% {
+        color: rgb(230, 230, 50, 0);
+    }
+
+    80% {
+        color: rgb(230, 230, 50);
+    }
+
+    100% {
+        color: rgb(230, 230, 50);
+    }
+}
+
+.porteFolio {
+    z-index: auto;
+
+    position: absolute;
+
+    width: 200px;
+
+    animation: porteFolioAction linear normal 10s infinite;
+    transition: 10ms;
+}
+
+@keyframes porteFolioAction {
+    0% {
+        color: rgb(230, 230, 50, 0);
+    }
+
+    40% {
+        color: rgb(230, 230, 50, 0);
+    }
+
+    50% {
+        color: rgb(230, 131, 50);
+    }
+
+    70% {
+        color: rgb(230, 131, 50);
+    }
+
+    80% {
+        color: rgb(230, 230, 50, 0);
+    }
+
+    100% {
+        color: rgb(230, 230, 50, 0);
+    }
+}
+
+.lol p {
+    display: flex;
+    align-items: end;
+
+    height: 8px;
+
+    background: linear-gradient(to left, rgb(230, 230, 50), rgba(0, 2, 66, 0.6), rgb(230, 230, 50), rgba(0, 2, 66, 0.6));
+    background-position: -550px;
+    background-clip: text;
+
+    color: transparent;
+
+    animation: BackgroundColorLol linear normal infinite 10s;
+    transition: 0.5s;
+}
+
+@keyframes BackgroundColorLol {
+    0% {
+        background-position: -10%;
+    }
+
+    100% {
+        background-position: 110%;
+    }
+}
+
+.navBar a {
+    text-decoration: none;
+    color: rgb(230, 230, 50);
+}
+
+.headerNavBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.zoneBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    border-top: rgb(0, 0, 0, 0.6) 1px solid;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    width: 200px;
+    height: 60px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.block img {
+    width: 50%;
+}
+
+.block button {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.block button:hover {
+    scale: 1.2;
+}
+
+.un:hover,
+.deux:hover {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    background-color: rgba(0, 2, 66, 0.6);
+
+    border-top: rgb(230, 230, 50, 0.2) 10px solid;
+    border-bottom: rgb(230, 230, 50, 0.2) 10px solid;
+}
+
+/* *$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*   INDEX   *$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$* */
+
+.pageIndex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 80vh;
+}
+
+
+.phraseDaccroche {
+    z-index: 2;
+
+    background-color: rgba(0, 2, 66, 0.8);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Calligraffitti";
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 6px;
+
+    color: rgb(230, 230, 50);
+
+
+    border: rgb(5, 10, 78) 20px double;
+
+    width: 60%;
+    height: max-content;
+
+    transition: all 0.8s;
+}
+
+.mots {
+    color: rgb(230, 230, 50);
+}
+
+.spaceX:hover {
+    background: linear-gradient(rgb(230, 230, 50), rgb(230, 230, 50, 0.2), rgb(230, 230, 50));
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+
+    padding-left: 6px;
+    padding-bottom: 2px;
+}
+
+.phraseDaccroche:hover {
+    border-bottom-right-radius: 40%;
+    border-top-left-radius: 30%;
+
+    color: rgb(230, 230, 50, 0.2);
+
+    transition: all 0.8s;
+}
+
+
+/* *$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*   PORTE FOLIO   *$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$* */
+#mesMacket {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 99vw;
+
+    transition: all 0.5s;
+}
+
+.macket {
+    position: relative;
+
+    width: 90vw;
+    margin: 50px 20px;
+}
+
+.pagePorteFolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: auto;
+}
+
+.pagePorteFolio .example {
+    z-index: 2;
+
+    background-color: rgba(0, 2, 66, 0.8);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    font-family: "Calligraffitti";
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 4px;
+    color: rgb(230, 230, 50);
+
+
+    border: rgb(5, 10, 78) 20px double;
+    border-radius: 5% / 40%;
+
+    width: 100%;
+    height: max-content;
+
+    transition: all 0.8s;
+}
+
+.example a {
+    width: 50%;
+}
+
+.exampleZozor {
+    width: 80%;
+
+    transition: all 1s;
+}
+
+.exampleZozor:hover {
+    width: 85%;
+
+    z-index: 2;
+}
+
+.pagePorteFolio .commentaire {
+    width: 70%;
+    border-left: 10px rgb(5, 10, 78) double;
+}
+
+.pagePorteFolio .commentaire a {
+    text-decoration: underline rgb(230, 230, 50, 0.2) 2px;
+    color: rgb(230, 230, 50);
+}
+
+.exampleOnemillionlines {
+    width: 60%;
+
+    transition: all 1s;
+}
+
+.exampleOnemillionlines:hover {
+    width: 80%;
+
+    z-index: 2;
+}
+
+.exampleMountain {
+    width: 20%;
+
+    transition: all 1s;
+}
+
+.exampleMountain:hover {
+    width: 30%;
+
+    z-index: 2;
+}
+
+.commentaire h1 {
+    font-size: 30px;
+
+    text-decoration: underline 2px solid Blue;
+}
+
+/* *$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*   PORTE CV   *$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$* */
+
+.pagePorteCV {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagePorteCV h3 {
+    margin: 20px;
+}
+
+.porteCV {
+    background-color: rgba(0, 2, 66, 0.8);
+
+    padding: 5px;
+
+    margin: 50px;
+
+    border-radius: 15%;
+
+    border-left: 4px solid rgb(230, 230, 50);
+    border-right: 4px solid rgb(230, 230, 50);
+
+    text-align: center;
+}
+
+.pagePorteCV h3 {
+    text-align: center;
+    text-decoration: underline 3px solid red;
+    margin: 30px;
+}
+
+.cv {
+    border-radius: 5%;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    background-color: rgba(0, 2, 66, 0.8);
+
+    text-align: center;
+}
+
+.cv img {
+    margin: 50px 0px;
+    width: 80vw;
+}
+
+.porteCV .lol {
+    transform: rotate(0.5turn);
+}
+
+
+/* *$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*   MINI JEUX  *$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$* */
+
+.pageMiniJeux {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pagePuissance4 {
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagePuissance4 h1 {
+    text-decoration: underline 2px red;
+}
+
+#game table {
+    border: 3px black outset;
+    background-color: black;
+}
+
+#game td {
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    border: 2px black inset;
+    border-radius: 2cm;
+    background-color: white;
+    cursor: pointer;
+}
+
+#game td.player1 {
+    background-color: red;
+}
+
+#game td.player2 {
+    background-color: yellow;
+}
+
+/* *$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*   MINI JEUX  *$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$* */
+.PageMorpion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 80px;
+}
+
+.PageMorpion h1 {
+    text-decoration: underline 2px solid red;
+}
+
+#Jeu {
+    display: inline-block;
+    background-color: rgb(38, 139, 255);
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#Jeu div {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#Jeu button {
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 5px;
+    float: left;
+}
+
+#StatutJeu {
+    color: rgb(38, 139, 255);
+    background: #eee;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+/* *$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*  FOOTER  *$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$*$$* */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: rgba(0, 2, 66, 0.6);
+}
+
+.navDuFooter {
+    padding: 20px;
+    margin: 10px;
+}
+
+.footer img {
+    border-radius: 50%;
+
+    background-color: white;
+
+    height: 60px;
+
+    position: relative;
+
+    width: auto;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/* $$*$$*$$*$$*   500PX   *$$*$$*$$*$$ */
+@media screen and (max-width: 900px) {
+    /* $$*$$*$$*$$*   body   *$$*$$*$$*$$ */
+    body {
+        background-color: rgba(0, 2, 66, 0.6);
+        
+        background-image: url("../assets/images/bandespacial2.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    
+        color: rgb(230, 230, 50);
+    }
+    /* $$*$$*$$*$$*   NAVBAR HEADER   *$$*$$*$$*$$ */
+    .titre {
+        z-index: 1;
+    
+        position: relative;
+    
+        text-align: center;
+    
+        height: 10%;
+    
+        margin-top: 5%;
+        margin-bottom: 1%;
+    }
+    .zoneBtn {
+        margin: 1%;
+    }
+    .block img {
+        width: 100%;
+    }
+    /* $$*$$*$$*$$*   INDEX   *$$*$$*$$*$$ */
+    .pageIndex {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;      
+    }
+    .phraseDaccroche {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        font-family: "Calligraffitti";
+        text-align: center;
+
+        line-height: 20px;
+        letter-spacing: 5px;
+
+        margin: 0% 12%;
+        
+        padding: 4%;
+
+        font-size: 14px;
+    
+        border: rgb(5, 10, 78) 2px double;
+    
+        width: max-content;
+        height: max-content;
+    
+        transition: all 0.8s;
+    }
+    /* $$*$$*$$*$$*   PORTE FOLIO   *$$*$$*$$*$$ */
+    .macket {
+        position: relative;
+    
+        width: 90vw;
+        margin: 30px 10px;
+    }
+    .pagePorteFolio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        height: auto;
+    }
+    
+    .pagePorteFolio .example {
+        z-index: 2;
+    
+        background-color: rgba(0, 2, 66, 0.8);
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    
+        font-family: "Calligraffitti";
+        text-align: center;
+        line-height: 20px;
+        letter-spacing: 4px;
+        color: rgb(230, 230, 50);
+    
+    
+        border: rgb(5, 10, 78) 20px double;
+        border-radius: 5% / 40%;
+    
+        width: 100%;
+        height: max-content;
+    
+        transition: all 0.8s;
+    }
+    .pagePorteFolio .commentaire {
+        font-size: 15px;
+        width: 90%;
+        border-top: 10px rgb(5, 10, 78) double;
+        border-left: 0px;
+    }
+    .example a {
+        width: 50%;
+    }
+    .exampleZozor {
+        width: 100%;
+    
+        transition: all 1s;
+    }
+    .exampleZozor:hover {
+        width: 120%;
+    
+        z-index: 2;
+    }
+    .pagePorteFolio .commentaire a {
+        text-decoration: underline rgb(230, 230, 50, 0.2) 2px;
+        color: rgb(230, 230, 50);
+    }
+    .exampleOnemillionlines {
+        width: 100%;
+    
+        transition: all 1s;
+    }
+    .exampleOnemillionlines:hover {
+        width: 80%;
+    
+        z-index: 2;
+    }
+    .exampleMountain {
+        width: 20%;
+    
+        transition: all 1s;
+    }
+    .exampleMountain:hover {
+        width: 100%;
+    
+        z-index: 2;
+    }
+    .commentaire h1 {
+        font-size: 20px;
+    
+        text-decoration: underline 2px solid Blue;
+    }
+    /* $$*$$*$$*$$*   MINI JEUX   *$$*$$*$$*$$ */
+    .pageMiniJeux {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .PageMorpion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        margin: 20px 0px;
+    }
+
+    /* $$*$$*$$*$$*   FOOTER   *$$*$$*$$*$$ */
+    .footer {
+        position: relative;
+
+        bottom: 0px;
+    }
+    .footer img {
+        border-radius: 50%;
+    
+        background-color: white;
+    
+        height: 40px;
+    
+        position: relative;
+    
+        width: auto;
+    }
+}
